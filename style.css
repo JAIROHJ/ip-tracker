@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #9b59b6;
+    font-family: 'Montserrat',;
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 5px;
+    color: #2e0a83;
+    cursor: pointer;
+}
+.main-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.loading-container{
+    display: none;
+
+}
+.loading{
+    width: 10px;
+    height: 30px;
+    background: #fff;
+    margin: 3px;
+    
+}
+.loading1{
+    animation: loader 1s ease-in-out infinite alternate;        
+}
+.loading2{
+    animation: loader 1s ease-in-out infinite alternate 0.5s;
+
+}
+.loading3{
+    animation: loader 1s ease-in-out infinite alternate 0.9s;
+
+}
+.ip-display,
+.location-display,.geo-display{
+    font-size: 40px;
+    margin: 5px;
+    color: #fff;
+}
+.lookup-btn{
+    border: none;
+    background: #0e440c;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: opacity 250ms linear;
+}
+.lookup-btn:hover{
+    background: #fff;
+    color: #0e440c;
+    opacity: 0.8;
+}
+
+
+
+@keyframes loader {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.3);
+
+    }
+}
